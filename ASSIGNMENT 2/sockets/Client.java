@@ -12,12 +12,12 @@ public class Client{
     int bytesRead;
     int current = 0;
     String value;
-    //  155.35.255.118  darpan's id
+    //  155.35.255.118
     
-    //  192.168.220.131   keya's id
+    //  192.168.220.131
     
     
-    // 192.168.1.102   raj's ip
+    // 192.168.1.102
     System.out.println("About to Connect...");
     Socket sock = new Socket("192.168.0.108",9750);
     System.out.println("Connecting...");
@@ -31,7 +31,7 @@ public class Client{
     bytesRead = is.read(mybytearray,0,mybytearray.length);
     current = bytesRead;
 
-    // thanks to A. Cádiz for the bug fix
+    // thanks to A. CÃ¡diz for the bug fix
     do {
        bytesRead = is.read(mybytearray, current, (mybytearray.length-current));
        if(bytesRead >= 0) current += bytesRead;
